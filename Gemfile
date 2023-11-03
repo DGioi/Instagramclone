@@ -8,7 +8,7 @@ gem "rails", "~> 7.1.1"
 # thêm vào ####### ####### ####### ####### ####### #######,
 gem 'bootstrap','~>5.2.0'
 gem 'devise'
-gem 'erb-formatter'
+gem "font-awesome-sass","~>6.1.2"
  ####### ####### ####### ####### ####### ####### #######
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
