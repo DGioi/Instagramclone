@@ -1,4 +1,8 @@
-<h1> Hello, welcome to home page</h1>
-<% if current_user %>
-<%= button_to "Sign out",destroy_user_session_path, method: :delete %>
-<%end%>
+<div class="d-flex flex-column">
+	<div>
+		<%=render 'story/stories_list' %>
+		<%= render 'posts/post', post: current_user.posts.first %>
+	</div>
+	<%= render 'suggestions/suggestions_list' %>
+</div>
+
