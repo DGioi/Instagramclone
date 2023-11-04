@@ -71,3 +71,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "devise-security", "~> 0.18.0"

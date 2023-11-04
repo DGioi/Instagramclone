@@ -111,6 +111,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-security (0.18.0)
+      devise (>= 4.3.0)
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
@@ -280,6 +282,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  devise-security (~> 0.18.0)
   font-awesome-sass (~> 6.1.2)
   importmap-rails
   jbuilder
