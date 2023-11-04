@@ -1,1 +1,15 @@
- <%= link_to "Sign In",new_user_session_path, class: "fs-6 my-4 text-decoration-none text-info" %>
+<div class="d-flex my-5 justify-content-center gap-5">
+    <div class="d-flex flex-column gap-3">
+        <%= render 'story/stories_list' %>
+        <div class="d-flex flex-column">
+            <%= render 'posts/post' , post: current_user.posts.first%>
+            <%= render 'posts/post' , post: current_user.posts.first%>
+            <%= render 'posts/post' , post: current_user.posts.first%>
+            <%= render 'posts/post' , post: current_user.posts.first%>
+        </div>
+    </div>
+    <div >
+        <%= render 'suggestions/suggestions_list' %>
+    </div>
+
+ </div>
