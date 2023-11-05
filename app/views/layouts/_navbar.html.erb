@@ -21,7 +21,7 @@
       <% end %>
 
 <!-- Button trigger modal -->    
-      </a><a type="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <a type="button" class="text-dark modalTrigger" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <i class="fa-regular fa-square-plus fa-xl"></i>
       </a>
       <%= link_to root_path,class:"text-dark" do%>
@@ -40,7 +40,7 @@
             <%= image_tag 'user-pp.png', class: "img-thumbnail rounded-circle", style: "width: 2rem" %>
             <% end %>
         </a>
-        <ul class="dropdown-menu"
+        <ul class="dropdown-menu">
         <li>
         <%= button_to 'Log out', destroy_user_session_path,class: "dropdown-item", method: :delete%> 
         </li>
